@@ -1,0 +1,21 @@
+Enter the number of processes:
+3
+Enter time quantum:
+4
+Enter burst time for Process 1:
+6
+Enter burst time for Process 2:
+8
+Enter burst time for Process 3:
+7
+
+Gantt Chart:
+0 -> P1 -> P2 -> P3 -> P1 -> P2 -> P3
+
+Process Burst Time      Turnaround Time Waiting Time
+P1              6               15              9
+P2              8               13              5
+P3              7               14              7
+
+Average Turnaround Time: 17.666666
+Average Waiting Time: 10.666667

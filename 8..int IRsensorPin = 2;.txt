@@ -1,0 +1,18 @@
+int IRsensorPin = 2; 
+
+void setup() {
+  Serial.begin(9600); 
+  pinMode(IRsensorPin, INPUT); 
+}
+
+void loop() {
+  int sensorValue = digitalRead(IRsensorPin); 
+  
+  if (sensorValue == HIGH) {
+    Serial.println("Obstacle detected!"); 
+  } else {
+    Serial.println("No obstacle detected."); 
+  }
+  
+  delay(1000); 
+}
